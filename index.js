@@ -1,6 +1,8 @@
 const fs = require('fs');
 const axios = require('axios');
 const inquirer = require('inquirer');
+require('dotenv').config()
+
 const questions = [
     {
         type: 'input',
@@ -13,14 +15,14 @@ const questions = [
         name: 'username2'
         }  
 ]
-
+const key = process.env.AUTHORIZATION
 
 inquirer
     .prompt(questions)
     .then( userQuestionObj => {
         const queryUrl = `https://api.github.com/users/${ userQuestionObj.username }`;
         axios
-        .get(queryUrl, {headers: { Authorization: 'token ecac3dcf2dbdebbff5774794b8e5cf7e2edb9f5f' }})
+        .get(queryUrl, {headers: { Authorization: key }})
         .then(res => {
             let userData = {
                 userimg: res.data.avatar_url,
