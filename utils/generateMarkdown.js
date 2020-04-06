@@ -31,9 +31,6 @@ ${ data.license }
 
 ${ data.contributors }
 
-![Contributors Badge](https://img.shields.io/badge/Contributors-1-brightgreen)  
-
-
 ## Tests
 
 ${ data.test}

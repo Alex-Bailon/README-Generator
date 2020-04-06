@@ -3,14 +3,14 @@ const axios = require('axios');
 const inquirer = require('inquirer');
 require('dotenv').config()
 let generateMarkdown = require('./utils/generateMarkdown')
-let questions = require('./utils/questions')
+let { questions } = require('./utils/questions')
 
 let userData
 let projectData
 const key = process.env.AUTHORIZATION
 
 inquirer
-    .prompt(questions.questions)
+    .prompt(questions)
     .then( userQuestionObj => {
         projectData = userQuestionObj
         const queryUrl = `https://api.github.com/users/${ userQuestionObj.username }`;
@@ -25,12 +25,7 @@ inquirer
                 if (err) {
                   return console.log(err);
                 }
-            })
-                        
+            })                       
         })
     })
-    .catch(error => {
-        if(error) {
-          console.log(error)
-        }
-    })
+    .catch(error => console.log(error))

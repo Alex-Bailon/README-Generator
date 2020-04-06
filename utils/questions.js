@@ -40,4 +40,4 @@ const questions = [
         name: 'test'
     }
 ]
-module.exports = {questions: questions}
+module.exports = {questions}
