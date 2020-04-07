@@ -1,3 +1,4 @@
+//array of questions to be asked to the user and exported 
 const questions = [
     {
         type: 'input',

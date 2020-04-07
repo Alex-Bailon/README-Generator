@@ -1,3 +1,4 @@
+//function to generate readme file and exported out
 function generateMarkdown(data, user) {
   return `
 # ${ data.title }
@@ -38,8 +39,9 @@ ${ data.test}
 ## Questions 
 
 If you have any further questions feel free to contact me at ${ user.userEmail }  
-![User image](${ user.userImg })
+![User image](${ user.userImg })  
+![Followers icon](https://img.shields.io/github/followers/${ data.username }?style=social)
 `;
 }
 
-module.exports = {generateMarkdown: generateMarkdown}
+module.exports = {generateMarkdown}
