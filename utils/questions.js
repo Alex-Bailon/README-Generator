@@ -27,11 +27,6 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is the license of the project?',
-        name: 'license'
-    },
-    {
-        type: 'input',
         message: 'What are the name contributors to the project?',
         name: 'contributors'
     },
@@ -39,6 +34,11 @@ const questions = [
         type: 'input',
         message: 'What are the test done for the project?',
         name: 'test'
+    },
+    {
+        type: 'input',
+        message: 'What is the license of the project?',
+        name: 'license'
     }
 ]
 module.exports = {questions}

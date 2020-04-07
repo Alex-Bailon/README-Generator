@@ -11,10 +11,10 @@ ${ data.description }
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
 * [Contributors](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+* [License](#license)
 
 ## Installation
 
@@ -24,9 +24,6 @@ ${ data.installation }
 
 ${ data.usage }
 
-## License 
-
-${ data.license }
 
 ## Contributing
 
@@ -41,6 +38,10 @@ ${ data.test}
 If you have any further questions feel free to contact me at ${ user.userEmail }  
 ![User image](${ user.userImg })  
 ![Followers icon](https://img.shields.io/github/followers/${ data.username }?style=social)
+  
+## License 
+
+${ data.license }
 `;
 }
 
