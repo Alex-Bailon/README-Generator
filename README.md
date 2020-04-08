@@ -8,9 +8,10 @@ README-Generator takes in user input to generator a readme file. The README-Gene
 
 In order for code to work please ensure you do the following:
 * That you run `npm install` before running the code
-* That a `.env` file with your access token from GitHub (please see `.env_sample` for an example)
+* Create a `.env` file with your access token from GitHub (please see `.env_sample` for an example)
+* Generated markdown file will be under `./utils/markdowns`
 
-Below is a demonstration how the code operates
+Below is a demonstration how the code operates  
 ![gif showing how code works](./utils/image/readme.gif)
 
 ## License

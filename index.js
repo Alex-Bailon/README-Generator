@@ -26,7 +26,7 @@ inquirer
                 userEmail: res.data.email || 'my github page.'
             }
             //generates readme file will project and user data objects
-            fs.writeFile('MyReadMe.md', generateMarkdown(projectData, userData), function(err) {
+            fs.writeFile('./utils/markdowns/README.md', generateMarkdown(projectData, userData), function(err) {
                 if (err) {
                   return console.log(err);
                 }
